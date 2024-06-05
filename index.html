@@ -6,15 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>İnteractive-Card</title>
   <link rel="stylesheet" href="assets/css/interactive-card.css">
+  <script src="assets/js/interactive-card.js" defer></script>
 </head>
 
 <body>
   <div class="container">
     <div class="cards">
       <div class="card-front">
-
         <img src="assets/img/ovals.png" alt="yuvarlaklar">
-
         <div class="card-info">
           <p class="card-numbers">0000 0000 0000 0000</p>
           <div class="card-name-my">
@@ -35,35 +34,35 @@
     <form class="card-details">
       <div>
         <p>Kart Sahibi Adı</p>
-        <input type="text" placeholder="Örneğin Muhammed Baki Çağlayan">
+        <input type="text" class="card-name-input inputs" placeholder="Örneğin Muhammed Baki Çağlayan">
       </div>
       <div>
         <p>Kart Numarası</p>
-        <input type="number" placeholder="örn. 1234 5678 9123 0000">
+        <input type="number" class="card-number-input inputs"  placeholder="örn. 1234 5678 9123 0000">
       </div>
       <div class="exp-date-cvc">
         <div class="month-year-form">
           <p>Son kullanma tarihi. Tarih (AA/YY)</p>
           <div>
-            <input type="number" placeholder="AA">
-            <input type="number" placeholder="YY">
+            <input type="number" class="ay-input inputs" placeholder="AA">
+            <input type="number" class="yil-input inputs" placeholder="YY">
           </div>
         </div>
         <div class="CVC-form">
           <p>CVC</p>
-          <input type="number" placeholder="örn. 123">
+          <input type="number" class="cvc-input inputs" placeholder="örn. 123">
         </div>
       </div>
       <button>Gönder</button>
     </form>
 
 
-      <div class="thanks">
-        <img src="assets/img/tick.png" alt="">
-        <h1>Teşekkürler</h1>
-        <p>Kart bilgilerinizi ekledik</p>
-        <button>Devam et</button>
-      </div>
+    <div class="thanks">
+      <img src="assets/img/tick.png" alt="">
+      <h1>Teşekkürler</h1>
+      <p>Kart bilgilerinizi ekledik</p>
+      <button>Devam et</button>
+    </div>
 
 
   </div>
