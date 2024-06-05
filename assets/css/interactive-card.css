@@ -34,6 +34,10 @@ button,
 textarea,
 select {
   font: inherit;
+  outline: none;
+}
+input:focus {
+  outline: 1px solid #610595;
 }
 
 p,
@@ -214,4 +218,16 @@ button {
   padding-block: 15px;
   border: none;
   border-radius: 8px;
+}
+
+.thanks {
+  width: 381px;
+  margin: auto;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+.thanks button {
+  margin-top: 13px;
 }
