@@ -234,6 +234,31 @@ button {
   margin-top: 13px;
 }
 
+
+
+span {
+  display: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(215, 60, 60, 1);
+}
+@media (width <=1024px) {
+  .card-front {
+    width: 447px;
+    left: 80px;
+    top: 0;
+    z-index: 2;
+  }
+  .card-backend {
+    width: 447px;
+    position: relative;
+    left: 80px;
+    top: 32px;
+  }
+}
+
 @media (width <=375px) {
 
   .container {
@@ -307,7 +332,8 @@ button {
     padding-bottom: 62px;
     z-index: 1;
   }
-  .card-backend img{
+
+  .card-backend img {
     display: none;
   }
 
@@ -329,7 +355,7 @@ button {
 
   .card-details {
     width: 327px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     margin-top: 120px;
