@@ -83,6 +83,7 @@ function handleSubmitClick (e) {
     cvcinput.style.border = "1px solid rgba(223, 222, 224, 1)";
   }
 
+  cardetails.reset();
 }
 
 button.addEventListener("click",handleSubmitClick);
@@ -138,7 +139,6 @@ function handleContinueClick(){
     uyaricardcvc.innerText = "";
     cvcinput.style.border = "1px solid rgba(223, 222, 224, 1)";
   }
-
 }
 
 devam.addEventListener("click",handleContinueClick);
