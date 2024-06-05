@@ -36,6 +36,7 @@ select {
   font: inherit;
   outline: none;
 }
+
 input:focus {
   outline: 1px solid #610595;
 }
@@ -228,6 +229,187 @@ button {
   flex-direction: column;
   gap: 35px;
 }
+
 .thanks button {
   margin-top: 13px;
+}
+
+@media (width <=375px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards {
+    width: 375px;
+    padding: 0 0 51px 0;
+  }
+
+  .card-front {
+    width: 286px;
+    background-image: url("../img/card-frontbg.png");
+    background-repeat: no-repeat;
+    padding: 17px 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 37px;
+    color: white;
+    border-radius: 8px;
+    position: absolute;
+    left: 17px;
+    top: 149px;
+    z-index: 2;
+  }
+
+  .card-info {
+    width: 245px;
+    gap: 17px;
+  }
+
+  .card-numbers {
+    width: 239px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    text-align: left;
+  }
+
+  .card-name-my {
+    width: 245px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .name {
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 11.48px;
+    text-align: left;
+  }
+
+  .month-year {
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 11.48px;
+    text-align: left;
+  }
+
+  .card-backend {
+    width: 286px;
+    gap: 15px;
+    border-radius: 8px;
+    position: relative;
+    left: 73px;
+    top: 32px;
+    padding-bottom: 62px;
+    z-index: 1;
+  }
+  .card-backend img{
+    display: none;
+  }
+
+  .black-line {
+    margin-top: 24px;
+    width: 100%;
+    height: 34px;
+    background-color: rgba(47, 47, 47, 1);
+  }
+
+  .cvc {
+    width: 231px;
+    background-color: rgba(173, 181, 190, 1);
+    text-align: end;
+    padding: 10px 16px;
+    border-radius: 8px;
+    color: white;
+  }
+
+  .card-details {
+    width: 327px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    gap: 26px;
+  }
+
+  .card-details p {
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 15.31px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: rgba(33, 9, 47, 1);
+    margin-bottom: 9px;
+  }
+
+  .card-details input {
+    width: 327px;
+    padding: 11px 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(223, 222, 224, 1);
+  }
+
+  .card-details input::placeholder {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    text-align: left;
+    color: rgba(33, 9, 47, 1);
+    opacity: 25%;
+  }
+
+  .exp-date-cvc {
+    display: flex;
+    align-items: end;
+    gap: 11px;
+  }
+
+  .month-year-form {
+    width: 152px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .month-year-form p {
+    font-size: 12px;
+  }
+
+  .month-year-form input {
+    width: 72px;
+  }
+
+  .CVC-form {
+    width: 164px;
+  }
+
+  .CVC-form input {
+    width: 164px;
+  }
+
+  button {
+    width: 327px;
+    color: white;
+    background-color: rgba(33, 9, 47, 1);
+    padding-block: 15px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .thanks {
+    width: 327px;
+    margin: auto;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .thanks button {
+    margin-top: 13px;
+  }
+
 }
